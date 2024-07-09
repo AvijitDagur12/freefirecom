@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      body{
+        background: linear-gradient(to right, #9cf00b, #33e1d8);
+      }
+        .container{
+            height: auto;
+            width: auto;
+            border: 1px solid rgb(162, 114, 114);
+            
+            display: grid;
+            grid-template-areas:"nav nav nav"
+                                "side article article"
+                                "main  main empty";
+        }
+        .item{
+            height: 120px;
+            margin: 3px;
+            border: 2px solid rgb(93, 16, 16);
+
+        }
+          .item-1{
+            grid-area: nav;
+            height: 60px;
+            font-size: 40PX;
+            text-align: center;
+            background: linear-gradient(to right, #eaff00, #FF02FF);;
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: rgb(14, 12, 146);
+            text-shadow: 9px 4px 10px red;
+            
+          }
+          .item-1::first-letter{
+                     color: rgb(30, 30, 239);
+                     font-size: 55px;
+          }
+          .item-2{
+            grid-area: side;
+            font-size: 50px;
+            align-items: center;
+            height: 60px;
+            font-size: 50px;
+            border-color: rgb(96, 182, 96);
+            background-color: aqua;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-shadow: 3px 6px 7px rgb(13, 236, 95);
+            color: green;
+          }
+          .item-3{
+            grid-area: article;
+            height: 60px;
+            font-size: 40px;
+            background-color: rgb(192, 222, 23);
+           border-color: rgb(247, 21, 21);
+            
+          }
+          
+          .item-4{
+            grid-area: main;
+            height: 390px;
+            width: 500px;
+            border-radius: 6px;
+            border-color: green;
+            font-size: 20px;
+            background: linear-gradient(to right, #00ffff, #FF02FF);
+          
+          }
+          #input{
+            height: 25px;
+            width: 290px;
+            margin-top: 40px;
+            margin-left: 20px;
+            border-color: rgb(107, 244, 57);
+            
+          }
+          #submit{
+            height: 30px;
+            width: 110px;
+            background-color:#ffe30e;
+            margin-top: 90px;
+            margin-left: 20px;
+            border-radius: 9px;
+            border: none;
+          }
+          h2{
+            text-align: center;
+            text-decoration: dotted underline;
+            color: rgb(255, 17, 69);
+          }
+          .item-5{
+            grid-area: empty;
+            width: 500PX;
+            height: 300px;
+            border: none;
+          }
+          #image{
+            height: 300px;
+            width: 500px;
+            box-shadow: 1px 1px 20px rgb(255, 7, 197);
+            filter: drop-shadow(1px 1px 20px rgb(251, 255, 34));
+            object-fit: contain;
+            object-position: top;
+          }
+         .item-6{
+          width:167%;
+          /* height: 80px; */
+          border: none;
+          text-align: center;
+          font-size: 20px;
+          background: linear-gradient(to right, #eaff00, #0ae71d);
+          font-weight: bold;
+          
+         }
+          
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1">FREE FIRE COMPETITION 2024_POWER HOUSE_KISMOT</div>
+        <div class="item item-2">This Competition held by----SOURAV KHAN</div>
+        <div class="item item-3">WP Contact:73847812*4</div>
+        <div class="item item-4">
+          <form method="post" action="https://script.google.com/macros/s/AKfycbzEoeLdwFzY2bJtzTiNlsyK_zLPZeekUASAwhQqjNvci5wtAwd0uuIVJ7rmgKMVxEAK/exec">
+          <h2>REGISTER YOURSELF</h2>
+          <div class="sub-item4">
+            Name-<input type="text" name="Name" id="input" placeholder="Enter Your name">  <br>
+            Mobile No-<input type="text" name="Mobile" id="input"  placeholder="Contact No."> <br>
+            FF id NO-<input type="number" name="Id Number" id="input"  placeholder="Id Number"> <br>
+            <input type="submit" id="submit">
+          </form>
+          </div>
+        </div>
+              
+        <div class="item item-5">
+          <img src="sourav.jpg" alt="avijit" id="image">
+        </div>
+        <div class="item item-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque modi perferendis esse nesciunt deleniti doloribus illum dicta explicabo, vel distinctio veniam soluta dolorum eveniet veritatis inventore? Suscipit voluptas veritatis dicta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum praesentium earum temporibus facilis, neque voluptate rem eius obcaecati minima similique. Molestiae aliquam, repellat quidem illo amet temporibus, ad expedita eligendi, sequi aperiam culpa accusantium! Corporis voluptatibus molestiae dolor sunt quos! <br> THANK YOU !</div>
+        <!-- <div class="item item-7">7</div>
+        <div class="item item-8">8</div> -->
+    </div>
+</body>
+</html>
